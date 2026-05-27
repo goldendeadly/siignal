@@ -1,0 +1,24 @@
+{
+  "engine": "neural_marketing_engine",
+  "date": "2026-05-27",
+  "input": "examples/neural_marketing_engine/input/run-brief.md",
+  "model": "gpt-4.1-mini",
+  "contexts_executed": [
+    "input-intake",
+    "strategy-modeling",
+    "blog-generation",
+    "signal-expansion",
+    "conversion-assets",
+    "optimization-recursion",
+    "packaging-output"
+  ],
+  "outputs": [
+    "01_input-intake.md",
+    "02_strategy-modeling.md",
+    "03_blog-generation.md",
+    "04_signal-expansion.md",
+    "05_conversion-assets.md",
+    "06_optimization-recursion.md",
+    "07_packaging-output.md"
+  ]
+}

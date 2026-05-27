@@ -68,6 +68,15 @@ ENGINE_CONTEXTS = {
         "automation-suggestions",
         "recursion-engine",
     ],
+    "neural_marketing_engine": [
+        "input-intake",
+        "strategy-modeling",
+        "blog-generation",
+        "signal-expansion",
+        "conversion-assets",
+        "optimization-recursion",
+        "packaging-output",
+    ],
 }
 
 
@@ -128,6 +137,7 @@ def build_system_prompt(engine_name: str, engine_readme: str, master_sop: str) -
     engine_titles = {
         "adzilla": "AdZilla Advertising Engine",
         "signalbeast": "SignalBeast Recursive Content Deployment System",
+        "neural_marketing_engine": "Neural Marketing Engine",
     }
     title = engine_titles.get(engine_name, engine_name.title())
 
@@ -296,7 +306,7 @@ def run_engine(engine_name: str, input_path: Path, output_dir: Optional[Path], m
 
 @app.command()
 def run(
-    engine: str = typer.Option("adzilla", help="Engine to run (adzilla, signalbeast)"),
+    engine: str = typer.Option("adzilla", help="Engine to run (adzilla, signalbeast, neural_marketing_engine)"),
     input: Path = typer.Option(..., "--input", "-i", help="Path to the run brief input file"),
     output: Optional[Path] = typer.Option(None, "--output", "-o", help="Output directory (auto-generated if not set)"),
     model: str = typer.Option("gpt-4.1-mini", "--model", "-m", help="LLM model to use"),
