@@ -1,0 +1,24 @@
+{
+  "engine": "blogzilla",
+  "date": "2026-05-27",
+  "input": "examples/blogzilla/input/run-brief.md",
+  "model": "gpt-4.1-mini",
+  "contexts_executed": [
+    "source-intake",
+    "context-analysis",
+    "core-generation",
+    "platform-generation",
+    "amplification-expansion",
+    "tracking-memory",
+    "automation-deployment"
+  ],
+  "outputs": [
+    "01_source-intake.md",
+    "02_context-analysis.md",
+    "03_core-generation.md",
+    "04_platform-generation.md",
+    "05_amplification-expansion.md",
+    "06_tracking-memory.md",
+    "07_automation-deployment.md"
+  ]
+}
