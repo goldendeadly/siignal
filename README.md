@@ -12,9 +12,9 @@ Siignal is composed of four specialized engines, each handling a distinct phase 
 
 | Engine | Purpose | Status |
 |--------|---------|--------|
-| **AdZilla** | Transforms an offer into multi-platform advertising campaigns | CLI Agent Ready |
+| **AdZilla** | Transforms an offer into multi-platform advertising campaigns | CLI Agent Ready (7 contexts) |
 | **Blogzilla** | Generates and repurposes blog content across platforms | Framework |
-| **SignalBeast** | Recursive content deployment — 100+ assets from one source | Framework |
+| **SignalBeast** | Recursive content deployment — 100+ assets from one source | CLI Agent Ready (7 contexts) |
 | **Neural Marketing Engine** | End-to-end strategy, content, and conversion asset generation | Framework |
 
 All engines share a common layered architecture:
@@ -64,7 +64,13 @@ export OPENAI_BASE_URL="https://your-provider-url/v1"
 python cli/siignal_agent.py run --engine adzilla --input examples/adzilla/input/run-brief.md
 ```
 
-This will execute all 7 contexts sequentially and save outputs to a timestamped `runs/` directory.
+### Run SignalBeast
+
+```bash
+python cli/siignal_agent.py run --engine signalbeast --input examples/signalbeast/input/run-brief.md
+```
+
+Both engines execute all 7 contexts sequentially and save outputs to a timestamped `runs/` directory.
 
 ### Other Commands
 
@@ -77,6 +83,9 @@ python cli/siignal_agent.py info adzilla
 
 # Use a different model
 python cli/siignal_agent.py run --engine adzilla --input ./my-brief.md --model gpt-4.1-mini
+
+# Run SignalBeast with a custom model
+python cli/siignal_agent.py run --engine signalbeast --input ./my-blog.md --model gpt-4.1-mini
 ```
 
 ---
