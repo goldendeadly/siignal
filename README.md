@@ -16,6 +16,7 @@ Siignal is composed of four specialized engines, each handling a distinct phase 
 | **Blogzilla** | Generates and repurposes blog content across platforms | CLI Agent Ready (7 contexts) |
 | **SignalBeast** | Recursive content deployment — 100+ assets from one source | CLI Agent Ready (7 contexts) |
 | **Neural Marketing Engine** | End-to-end strategy, content, and conversion asset generation | CLI Agent Ready (7 contexts) |
+| **Realtor Concierge** | Lead intake, qualification, and appointment booking engine | CLI Agent Ready (7 contexts) |
 
 All engines share a common layered architecture:
 
@@ -82,7 +83,13 @@ python cli/siignal_agent.py run --engine neural_marketing_engine --input example
 python cli/siignal_agent.py run --engine blogzilla --input examples/blogzilla/input/run-brief.md
 ```
 
-All four engines execute their full context sequence and save outputs to a timestamped `runs/` directory.
+### Run Realtor Concierge
+
+```bash
+python cli/siignal_agent.py run --engine realtor_concierge --input examples/realtor_concierge/input/run-brief.md
+```
+
+All five engines execute their full context sequence and save outputs to a timestamped `runs/` directory.
 
 ### Other Commands
 

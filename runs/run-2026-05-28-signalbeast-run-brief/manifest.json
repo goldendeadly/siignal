@@ -1,0 +1,24 @@
+{
+  "engine": "signalbeast",
+  "date": "2026-05-28",
+  "input": "examples/signalbeast/input/run-brief.md",
+  "model": "gpt-4.1-nano",
+  "contexts_executed": [
+    "context-decoder",
+    "core-generation",
+    "platform-explosion",
+    "tracking-canon",
+    "signal-expansion",
+    "automation-suggestions",
+    "recursion-engine"
+  ],
+  "outputs": [
+    "01_context-decoder.md",
+    "02_core-generation.md",
+    "03_platform-explosion.md",
+    "04_tracking-canon.md",
+    "05_signal-expansion.md",
+    "06_automation-suggestions.md",
+    "07_recursion-engine.md"
+  ]
+}

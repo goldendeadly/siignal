@@ -1,0 +1,24 @@
+{
+  "engine": "adzilla",
+  "date": "2026-05-27",
+  "input": "examples/adzilla/input/run-brief.md",
+  "model": "gpt-4.1-nano",
+  "contexts_executed": [
+    "offer-intake",
+    "market-analysis",
+    "creative-generation",
+    "ad-assembly",
+    "targeting-plan",
+    "performance-tracking",
+    "optimisation-expansion"
+  ],
+  "outputs": [
+    "01_offer-intake.md",
+    "02_market-analysis.md",
+    "03_creative-generation.md",
+    "04_ad-assembly.md",
+    "05_targeting-plan.md",
+    "06_performance-tracking.md",
+    "07_optimisation-expansion.md"
+  ]
+}

@@ -86,6 +86,15 @@ ENGINE_CONTEXTS = {
         "tracking-memory",
         "automation-deployment",
     ],
+    "realtor_concierge": [
+        "call-intake",
+        "classification-booking",
+        "logging-digest",
+        "meeting-intake",
+        "meeting-report",
+        "qa-tuning",
+        "optimisation-expansion",
+    ],
 }
 
 
@@ -148,6 +157,7 @@ def build_system_prompt(engine_name: str, engine_readme: str, master_sop: str) -
         "signalbeast": "SignalBeast Recursive Content Deployment System",
         "neural_marketing_engine": "Neural Marketing Engine",
         "blogzilla": "Blogzilla Content Engine",
+        "realtor_concierge": "Realtor Concierge Lead Engine",
     }
     title = engine_titles.get(engine_name, engine_name.title())
 
@@ -316,7 +326,7 @@ def run_engine(engine_name: str, input_path: Path, output_dir: Optional[Path], m
 
 @app.command()
 def run(
-    engine: str = typer.Option("adzilla", help="Engine to run (adzilla, signalbeast, neural_marketing_engine, blogzilla)"),
+    engine: str = typer.Option("adzilla", help="Engine to run (adzilla, signalbeast, neural_marketing_engine, blogzilla, realtor_concierge)"),
     input: Path = typer.Option(..., "--input", "-i", help="Path to the run brief input file"),
     output: Optional[Path] = typer.Option(None, "--output", "-o", help="Output directory (auto-generated if not set)"),
     model: str = typer.Option("gpt-4.1-mini", "--model", "-m", help="LLM model to use"),
