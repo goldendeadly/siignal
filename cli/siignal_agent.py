@@ -102,6 +102,15 @@ ENGINE_CONTEXTS = {
         "qa-tuning",
         "optimisation-expansion",
     ],
+    "lead_shield": [
+        "call-intake",
+        "classification-triage",
+        "maintenance-intake",
+        "logging-digest",
+        "operations-report",
+        "qa-tuning",
+        "optimisation-expansion",
+    ],
 }
 
 

@@ -8,7 +8,7 @@ Siignal operates as an autonomous agent: give it a run brief, and it executes a 
 
 ## Architecture
 
-Siignal is composed of four specialized engines, each handling a distinct phase of the marketing lifecycle:
+Siignal is composed of six specialized engines, each handling a distinct phase of the marketing and operations lifecycle:
 
 | Engine | Purpose | Status |
 |--------|---------|--------|
@@ -17,6 +17,7 @@ Siignal is composed of four specialized engines, each handling a distinct phase 
 | **SignalBeast** | Recursive content deployment — 100+ assets from one source | CLI Agent Ready (7 contexts) |
 | **Neural Marketing Engine** | End-to-end strategy, content, and conversion asset generation | CLI Agent Ready (7 contexts) |
 | **Realtor Concierge** | Lead intake, qualification, and appointment booking engine | CLI Agent Ready (7 contexts) |
+| **Lead Shield** | Property management triage — tenant, vendor, and owner request handling | CLI Agent Ready (7 contexts) |
 
 All engines share a common layered architecture:
 

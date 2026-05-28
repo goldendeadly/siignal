@@ -1,0 +1,65 @@
+{
+  "engine": "lead_shield",
+  "version": "0.2.0",
+  "run_date": "2026-05-28",
+  "input_brief": "examples/lead_shield/input/run-brief.md",
+  "model": "gpt-4.1-mini",
+  "contexts_executed": 7,
+  "contexts": [
+    {
+      "order": 1,
+      "name": "call-intake",
+      "status": "complete",
+      "output_file": "01_call-intake.md",
+      "tokens_used": 1840
+    },
+    {
+      "order": 2,
+      "name": "classification-triage",
+      "status": "complete",
+      "output_file": "02_classification-triage.md",
+      "tokens_used": 2650
+    },
+    {
+      "order": 3,
+      "name": "maintenance-intake",
+      "status": "complete",
+      "output_file": "03_maintenance-intake.md",
+      "tokens_used": 1920
+    },
+    {
+      "order": 4,
+      "name": "logging-digest",
+      "status": "complete",
+      "output_file": "04_logging-digest.md",
+      "tokens_used": 2100
+    },
+    {
+      "order": 5,
+      "name": "operations-report",
+      "status": "complete",
+      "output_file": "05_operations-report.md",
+      "tokens_used": 2800
+    },
+    {
+      "order": 6,
+      "name": "qa-tuning",
+      "status": "complete",
+      "output_file": "06_qa-tuning.md",
+      "tokens_used": 3200
+    },
+    {
+      "order": 7,
+      "name": "optimisation-expansion",
+      "status": "complete",
+      "output_file": "07_optimisation-expansion.md",
+      "tokens_used": 2400
+    }
+  ],
+  "total_tokens": 16910,
+  "safety_checks": {
+    "injection_scan": "PASS",
+    "pii_scan": "PASS",
+    "output_length_check": "PASS"
+  }
+}
